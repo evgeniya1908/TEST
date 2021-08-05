@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{%block title%}Pay{%endblock%}
+{%block body%}
+<form  method="post">
+  <p><b>Сумма оплаты:</b><br>
+  <input type="text" name="text" size="40">
+  <p><b>Валюта оплаты:</b><br>
+   <p><select size="1"  name="currency">
+    <option disabled>Выберите валюту</option>
+    <option value = "978">EUR</option>
+    <option value = "840">USD</option>
+    <option value="643">RUB</option>
+   </select></p>
+  <p><b>Описание товара:</b><br>
+  <textarea name="comment" cols="40" rows="3"></textarea></p>
+  <p><input type="submit" value="Отправить"></p>
+  </form>
+{%endblock%}

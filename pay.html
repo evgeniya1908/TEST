@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{%block title%}Pay{%endblock%}
+{%block body%}
+<form name="Pay" method="post" action="https://pay.piastrix.com/ru/pay" accept-charset="UTF-8"> <input type="hidden" name="amount" value="{{data1['amount']}}"/> <input type="hidden" name="currency" value="{{data1['currency']}}"/> <input type="hidden" name="shop_id" value="{{data1['shop_id']}}"/> <input type="hidden" name="sign" value="{{data1['sign']}}"/> <input type="hidden" name="shop_order_id" value="{{data1['shop_order_id']}}"/>
+
+<input type="submit"/> <input type="hidden" name="description" value="Test Pay"/> </form>
+{%endblock%}

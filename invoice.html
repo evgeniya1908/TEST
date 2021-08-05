@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{%block title%}Invoice{%endblock%}
+{%block body%}
+<form name="invoice" method="{{method}}" action="{{url2}}" accept-charset="UTF-8">
+    <input type="hidden" name="ac_account_email" value="{{data3['ac_account_email']}}"/>
+    <input type="hidden" name="ac_amount" value="{{data3['ac_amount']}}"/>
+    <input type="hidden" name="ac_currency" value="{{data3['ac_currency']}}"/>
+    <input type="hidden" name="ac_fail_url" value="{{data3['ac_fail_url']}}"/>
+    <input type="hidden" name="ac_order_id" value="{{data3['ac_order_id']}}"/>
+    <input type="hidden" name="ac_ps" value="{{data3['ac_ps']}}"/>
+    <input type="hidden" name="ac_sci_name" value="{{data3['ac_sci_name']}}"/>
+    <input type="hidden" name="ac_sign" value="{{data3['ac_sign']}}"/>
+    <input type="hidden" name="ac_sub_merchant_url" value="{{data3['ac_sub_merchant_url']}}"/>
+    <input type="hidden" name="ac_success_url" value="{{data3['ac_success_url']}}"/>
+<input type="submit"/> <input type="hidden" name="description" value="Test invoice"/> </form>
+{%endblock%}
